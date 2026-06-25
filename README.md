@@ -1,6 +1,6 @@
-# Colorado-neuropixels-2026
+# Harvard-neuropixels-2026
 
-This repository contains files for the _Python_ tutorials in the 2026 Colorado Neuropixels course. 
+This repository contains files for the _Python_ tutorials in the 2026 Harvard Neuropixels course. 
 
 The goal of the tutorials is to show how to navigate spike sorting outputs to retrieve data and make plots and how data are structured, so we use mostly standard python libraries.
 
@@ -102,7 +102,7 @@ In short, the _minimum requirements_ for an **acquisition computer**  are:
 ## Installing software
 
 > [!IMPORTANT]
->Complete installation instructions for software for the course are included "sheets" folder of this repo, also [here](https://github.com/jcouto/colorado-neuropixels-2026/blob/main/sheets/u24_student_software_installation.pdf).
+>Complete installation instructions for software for the course are included "sheets" folder of this repo, also [here](https://github.com/jcouto/harvard-neuropixels-2026/blob/main/sheets/u24_student_software_installation.pdf).
 >  
 
 ## References and links
