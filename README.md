@@ -102,7 +102,7 @@ In short, the _minimum requirements_ for an **acquisition computer**  are:
 ## Installing software
 
 > [!IMPORTANT]
->Complete installation instructions for software for the course are included "sheets" folder of this repo, also [here](https://github.com/jcouto/harvard-neuropixels-2026/blob/main/sheets/Example_Neuropixels analysis_installation.pdf).
+>Complete installation instructions for software for the course are included "sheets" folder of this repo, also [here](https://github.com/jcouto/harvard-neuropixels-2026/blob/main/sheets/Example_Neuropixels_analysis_installation.pdf).
 >  
 
 ## References and links
