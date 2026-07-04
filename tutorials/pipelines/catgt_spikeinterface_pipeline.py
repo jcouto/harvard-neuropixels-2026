@@ -7,7 +7,7 @@ Dredge is called through SpikeInterface for drift correction
 KS4 and some metrics calculations are done through SpikeIntterface
 
 To run this pipeline:
-1) Follow instructions in 'u24_student_software_installation.pdf' to create
+1) Follow instructions in 'Example_Neuropixels_analysis_installation.pdf' to create
    the npix-test environment. Select that environment as your Python interpreter.
 2) Install CatGT and copy the path to catGTPath
 3) Set User params (top of main())
@@ -28,6 +28,7 @@ import subprocess
 import os
 import time
 import sys
+import random
 
 # Environment constants for CatGT
 catGTPath = r"C:\Users\labadmin\Documents\CatGT-win" # path to CatGT folder, which contains the runit.bat or runit.sh file
@@ -234,11 +235,14 @@ def main():
     # This allows us to use KS4's whitening (which is different from the SI version)
     ks4_params = si.get_default_sorter_params('kilosort4')
     ks4_params['do_CAR'] = False # skip CAR in kilosort
+    random.seed()
+    ks4_params['cluster_init_seed'] = random.randint(1,1000)
+    print(ks4_params['cluster_init_seed'])
    
     job_kwargs = dict(n_jobs=4, chunk_duration='1s', progress_bar=True) # how to chunk and process data
 
     # What to run -- set both to True to run from scratch
-    b_catgt = True  # set to false to re-run wihout re-running CatGT, for example to test sorting and metrics calculation
+    b_catgt = False  # set to false to re-run wihout re-running CatGT, for example to test sorting and metrics calculation
     b_sort = True # set to False to skip sorting and just open the Analyzer -- useful for testing metrics calculation alone
 
     #------End of user params-------------
