@@ -398,6 +398,7 @@ def load_phy_folder(folder, analyzer_waveforms = None):
         whitening_mat_inv = np.load(folder.rglob('whitening_mat_inv.npy').__next__())
     )
 
+
     # estimate the amplitudes from the template fitting
     res['spike_amplitudes'] = compute_spike_amplitudes(templates = res['templates'],
                                                     whitening_matrix= res['whitening_mat_inv'],
